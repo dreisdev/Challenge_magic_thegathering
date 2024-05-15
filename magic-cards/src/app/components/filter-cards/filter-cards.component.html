@@ -1,12 +1,12 @@
-<form [formGroup]="searchForm" (ngSubmit)="onSubmit">
-<input type="text" formControlName="cardName" placeholder="Nome da Carta">
-<select formControlName="block">
-    <option value="">Selecione um Bloco</option>
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="form-container">
+<input type="text" formControlName="cardName" placeholder="Nome da Carta" class="input-long">
+<select formControlName="block" class="input-short">
+    <option value="">Bloco</option>
     <option value="Amonkhet">Amonkhet</option>
     <option value="Ixalan">Ixalan</option>
     <option value="Zendikar">Zendikar</option>
     <option value="Ravnica">Ravnica</option>
     <option value="Onslaught">Onslaught</option>
 </select>
-<button type="submit" [disabled]="!searchForm.valid">Pesquisar</button>
+<button type="submit" [disabled]="!searchForm.valid">Buscar</button>
 </form>

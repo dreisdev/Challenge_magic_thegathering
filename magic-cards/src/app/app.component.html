@@ -1,2 +1,3 @@
-<app-filter-cards></app-filter-cards>
+<app-filter-cards (search)="onSearch($event)"></app-filter-cards>
+<app-search-cards [filters]="searchFilters"></app-search-cards>
 <router-outlet></router-outlet>
