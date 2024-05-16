@@ -5,13 +5,11 @@ $button-hover-color: #555;
 $border-color: #666; 
 
 .form-container {
-  background-color: $background-color;
   color: $text-color;
   padding: 20px;
   border-radius: 8px;
   display: flex;
   gap: 10px;
-  height: 100vw;
 
   .input-long, 
   .input-short, 

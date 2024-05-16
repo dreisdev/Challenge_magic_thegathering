@@ -1,9 +1,11 @@
-<div *ngIf="sets.length" class="card">
-    <h2>Cartas Encontradas</h2>
+
+<div *ngIf="sets.length">
+     <h2>Cartas Encontradas</h2>
+</div>
+<div *ngIf="sets.length" class="search-results">
    <div *ngFor="let set of sets" class="card">
         <h3>{{set.name}}</h3>
         <p>{{set.block}}</p>
         <p>{{set.releaseDate | date}}</p>
    </div>
-
 </div>
