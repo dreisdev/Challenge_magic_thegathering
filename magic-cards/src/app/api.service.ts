@@ -22,5 +22,10 @@ export class ApiService {
     return this.http.get(`${this.baseUrl}/sets`, {params});
   }
 
+  getBooster(setCode: string): Observable<any> {
+    console.log('code', setCode);
+    return this.http.get(`${this.baseUrl}/sets/${setCode}/booster`);
+  }
+
  
 }
