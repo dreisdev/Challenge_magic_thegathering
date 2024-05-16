@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/magic-cards/browser",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
