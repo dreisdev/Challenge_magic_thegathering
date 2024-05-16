@@ -1,5 +1,8 @@
-
-<div *ngIf="sets.length">
+<div *ngIf="loading">
+     <app-loading></app-loading>
+   </div>
+   <p *ngIf="error" class="error-message">{{ error }}</p>
+   <div *ngIf="!loading && !error && sets.length">
      <h2>Cartas Encontradas</h2>
 </div>
 <div *ngIf="sets.length" class="search-results">
@@ -7,5 +10,6 @@
         <h3>{{set.name}}</h3>
         <p>{{set.block}}</p>
         <p>{{set.releaseDate | date}}</p>
+        <button (click)="openBoosters(set.code)" class="button-booster">Abrir Boosters</button>
    </div>
 </div>

@@ -1,5 +1,7 @@
 $border-color: #666;
-$background-color: #555; 
+$background-color: #555;
+$button-bg-color:  #644646;
+$button-hover-color: #837f7f;
 
 
 .search-results {
@@ -24,5 +26,19 @@ $background-color: #555;
         &:hover {
             transform: scale(1.05);
         }
+    }
+  }
+
+  .button-booster {
+    background-color: $button-bg-color;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+
+    &:hover {
+      background-color: $button-hover-color;
     }
   }
