@@ -1,0 +1,12 @@
+<div *ngIf="cards.length">
+    <h2>Suas cartas do pacote aberto</h2>
+    <div class="card-container">
+        <div *ngFor="let card of cards" class="card-booster">
+            <img [src]="card.imageUrl" alt="{{card.name}}">
+            <h3>{{card.name}}</h3>
+            <p>Mana Cost: {{card.manaCost}}</p>
+            <p>Color: {{card.colorIdentity.join(', ')}}</p>
+            <p>{{card.text}}</p>
+        </div>
+    </div>
+</div>

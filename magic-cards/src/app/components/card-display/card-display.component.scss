@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card-booster {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .card-booster img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .card-booster h3 {
+    color: #fff;
+  }
+  
+  .card-booster p {
+    color: #ddd;
+  }
