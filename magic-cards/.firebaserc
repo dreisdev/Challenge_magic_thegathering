@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "linked-magic-cards"
-  }
+  },
+  "targets": {
+    "linked-magic-cards": {
+      "hosting": {
+        "linked-magic-cards": [
+          "./firebase.json"
+        ],
+        "site": [
+          "linked-magic-cards"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
