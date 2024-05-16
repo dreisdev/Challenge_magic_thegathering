@@ -22,4 +22,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LINKED_MAGIC_CARDS }}'
           channelId: live
           projectId: linked-magic-cards
-          entryPoint: magic-cards
+          
