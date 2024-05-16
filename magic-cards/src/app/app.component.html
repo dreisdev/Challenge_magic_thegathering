@@ -1,5 +1,6 @@
 <div class="app-container">
 <app-filter-cards (search)="onSearch($event)"></app-filter-cards>
-<app-search-cards [filters]="searchFilters"></app-search-cards>
+<app-search-cards [filters]="searchFilters" (boosterOpened)="onBoosterOpened($event)"></app-search-cards>
+<app-card-display [cards]="boosterCards"></app-card-display>
 </div>
 <router-outlet></router-outlet>
